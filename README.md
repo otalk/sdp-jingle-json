@@ -27,10 +27,10 @@ npm install sdp-jingle-json
 var sjj = require('sdp-jingle-json');
 
 // I have SDP, but want JSON:
-sjj.toSessionJSON(sdpBlob, 'initiator'); // or 'responder'
+var json = sjj.toSessionJSON(sdpBlob, 'initiator'); // or 'responder'
 
 // I have JSON (a list of content description), but want SDP:
-sjj.toSessionSDP(jsonContents, 'optionalcustomsid');
+var sdp = sjj.toSessionSDP(jsonContents, 'optionalcustomsid');
 ```
 
 You can also use `toMediaSDP` and `toMediaJSON` to convert only a single media section.
