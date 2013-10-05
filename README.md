@@ -13,13 +13,18 @@ stanza with any of the various JS XMPP libraries, such as [stanza.io](https://gi
 or [xmpp-ftw](https://github.com/lloydwatkin/xmpp-ftw).
 
 And since you're working with WebRTC, be sure to check out
-[simplewebrtc](https://simplewebrtc.com).
+[simplewebrtc](http://simplewebrtc.com).
+
 
 ## Installing
 
 ```
 npm install sdp-jingle-json
 ```
+
+Also suitable for use with browserify/CommonJS in the browser.
+
+If you're not using browserify or you want AMD support use `sdp-jingle-json.bundle.js`.
 
 ## How to use it
 
