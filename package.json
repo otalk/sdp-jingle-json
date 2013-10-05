@@ -15,7 +15,7 @@
     ],
     "contributors": [
         "Lance Stout <lance@andyet.net",
-        "Phillip Hancke <fippo@goodadvice.pages.de>"
+        "Philipp Hancke <fippo@goodadvice.pages.de>"
     ],
     "license": "MIT",
     "dependencies": {

@@ -142,4 +142,4 @@ MIT
 
 If you like this, follow [@lancestout](http://twitter.com/lancestout) on twitter.
 
-SDP-Jingle-JSON is derived, in collaboration, from the work done by Phillip Hancke for [strophe.jingle](https://github.com/estos/strophe.jingle).
+SDP-Jingle-JSON is derived, in collaboration, from the work done by Philipp Hancke for [strophe.jingle](https://github.com/estos/strophe.jingle).
