@@ -34,8 +34,8 @@ var sjj = require('sdp-jingle-json');
 // I have SDP, but want JSON:
 var json = sjj.toSessionJSON(sdpBlob, 'initiator'); // or 'responder'
 
-// I have JSON (a list of content description), but want SDP:
-var sdp = sjj.toSessionSDP(jsonContents, 'optionalcustomsid');
+// I have JSON (a dictionary of session and content descriptions), but want SDP:
+var sdp = sjj.toSessionSDP(jsonSession);
 ```
 
 You can also use `toMediaSDP` and `toMediaJSON` to convert only a single media section.
@@ -51,6 +51,12 @@ The format for the generated JSON content is:
     "responder": "",
     "sid": "",
     // ---- Content payload
+    "grouping": [
+        {
+            "semantics": "",
+            "contents": [],
+        } //...
+    ],
     "contents": [
         {
            "name": "",
@@ -61,6 +67,15 @@ The format for the generated JSON content is:
                "descType": "rtp",
                "media": "",
                "ssrc": "",
+               "ssrcs": [
+                   {
+                       "ssrc": "",
+                       "cname": "",
+                       "msid": "",
+                       "mslabel": "",
+                       "label": ""
+                   } //...
+               ],
                "formats": [],
                "bandwidth": "",
                "bandwidthType": "",
