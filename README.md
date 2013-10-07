@@ -76,7 +76,6 @@ The format for the generated JSON content is:
                        "label": ""
                    } //...
                ],
-               "formats": [],
                "bandwidth": "",
                "bandwidthType": "",
                "headerExtensions": [
