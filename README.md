@@ -138,10 +138,12 @@ The format for the generated JSON content is:
                        "type": ""
                    } //...
                ],
-               "fingerprint": {
+               "fingerprints": [
+                   {
                    "hash": "",
                    "value": ""
-               }
+                   } // ...
+               ]
            }
         } //...
     ]
