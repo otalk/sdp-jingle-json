@@ -122,6 +122,7 @@ The format for the generated JSON content is:
                "transType": "iceUdp",
                "ufrag": "",
                "pwd": "",
+               "setup": "",
                "candidates": [
                    {
                        "component": "",
@@ -156,6 +157,6 @@ MIT
 
 ## Created By
 
-If you like this, follow [@lancestout](http://twitter.com/lancestout) on twitter.
+If you like this, follow [@lancestout](http://twitter.com/lancestout) or [@HCornflower](http://twitter.com/HCornflower) on twitter.
 
 SDP-Jingle-JSON is derived, in collaboration, from the work done by Philipp Hancke for [strophe.jingle](https://github.com/estos/strophe.jingle).
