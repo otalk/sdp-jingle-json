@@ -1,4 +1,12 @@
 # SDP-Jingle-JSON
+**Convert SDP blobs to and from JSON**
+
+[![Build Status](https://travis-ci.org/legastero/sdp-jingle-json.png)](https://travis-ci.org/legastero/sdp-jingle-json)
+[![Dependency Status](https://david-dm.org/legastero/sdp-jingle-json.png)](https://david-dm.org/legastero/sdp-jingle-json)
+[![devDependency Status](https://david-dm.org/legastero/sdp-jingle-json/dev-status.png)](https://david-dm.org/legastero/sdp-jingle-json#info=devDependencies)
+
+[![Browser Support](https://ci.testling.com/legastero/sdp-jingle-json.png)](https://ci.testling.com/legastero/sdp-jingle-json)
+
 
 ## What is this?
 
@@ -22,9 +30,13 @@ And since you're working with WebRTC, be sure to check out
 npm install sdp-jingle-json
 ```
 
-Also suitable for use with browserify/CommonJS in the browser.
+## Building bundled/minified version (for AMD, etc)
 
-If you're not using browserify or you want AMD support use `sdp-jingle-json.bundle.js`.
+```sh
+$ grunt
+```
+
+The bundled and minified files will be in the generated `build` directory.
 
 ## How to use it
 
@@ -39,6 +51,10 @@ var sdp = sjj.toSessionSDP(jsonSession);
 ```
 
 You can also use `toMediaSDP` and `toMediaJSON` to convert only a single media section.
+
+## See it in action
+
+Open the `convert.html` file and enter in SDP or JSON to see how it converts back and forth.
 
 ## Jingle JSON
 
