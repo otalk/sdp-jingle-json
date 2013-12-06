@@ -67,7 +67,7 @@ The format for the generated JSON content is:
     "responder": "",
     "sid": "",
     // ---- Content payload
-    "grouping": [
+    "groups": [
         {
             "semantics": "",
             "contents": [],
@@ -83,13 +83,23 @@ The format for the generated JSON content is:
                "descType": "rtp",
                "media": "",
                "ssrc": "",
-               "ssrcs": [
+               "sourceGroups": [
+                    {
+                        "semantics": "",
+                        "sources": [
+                            "" //...
+                        ]
+                    } //...
+               ],
+               "sources": [
                    {
                        "ssrc": "",
-                       "cname": "",
-                       "msid": "",
-                       "mslabel": "",
-                       "label": ""
+                       "parameters: [
+                           {
+                               "key": "",
+                               "value": ""
+                           } //...
+                       ]
                    } //...
                ],
                "bandwidth": "",

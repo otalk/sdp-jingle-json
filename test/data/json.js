@@ -102,13 +102,28 @@ module.exports = {
                 ],
                 "ssrc": "445948959",
                 "mux": true,
-                "ssrcs": [
+                "sourceGroups": [],
+                "sources": [
                     {
-                        "cname": "RbR04HtIjW+Sa+yz",
-                        "msid": "uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgo uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgoa0",
-                        "mslabel": "uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgo",
-                        "label": "uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgoa0",
-                        "ssrc": "445948959"
+                        "ssrc": "445948959",
+                        "parameters": [
+                            {
+                                "key": "cname",
+                                "value": "RbR04HtIjW+Sa+yz"
+                            },
+                            {
+                                "key": "msid",
+                                "value": "uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgo uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgoa0"
+                            },
+                            {
+                                "key": "mslabel",
+                                "value": "uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgo"
+                            },
+                            {
+                                "key": "label",
+                                "value": "uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgoa0"
+                            }
+                        ]
                     }
                 ]
             },
@@ -205,13 +220,54 @@ module.exports = {
                 ],
                 "ssrc": "797563643",
                 "mux": true,
-                "ssrcs": [
+                "sourceGroups": [
                     {
-                        "cname": "RbR04HtIjW+Sa+yz",
-                        "msid": "uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgo uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgov0",
-                        "mslabel": "uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgo",
-                        "label": "uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgov0",
-                        "ssrc": "797563643"
+                        "semantics": "FID",
+                        "sources": ["797563643", "193463643"]
+                    }
+                ],
+                "sources": [
+                    {
+                        "ssrc": "797563643",
+                        "parameters": [
+                            {
+                                "key": "cname",
+                                "value": "RbR04HtIjW+Sa+yz"
+                            },
+                            {
+                                "key": "msid",
+                                "value": "uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgo uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgov0"
+                            },
+                            {
+                                "key": "mslabel",
+                                "value": "uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgo"
+                            },
+                            {
+                                "key": "label",
+                                "value": "uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgov0"
+                            }
+                        ]
+                    },
+                    {
+                        "ssrc": "193463643",
+                        "parameters": [
+                            {
+                                "key": "cname",
+                                "value": "RbR04HtIjW+Sa+yz"
+                            },
+                            {
+                                "key": "msid",
+                                "value": "uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgo uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgov0"
+                            },
+                            {
+                                "key": "mslabel",
+                                "value": "uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgo"
+                            },
+                            {
+                                "key": "label",
+                                "value": "uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgov0"
+                            }
+                        ]
                     }
                 ]
             },
@@ -243,7 +299,7 @@ module.exports = {
             "senders": "both"
         }
     ],
-    "groupings": [
+    "groups": [
         {
             "semantics": "BUNDLE",
             "contents": [

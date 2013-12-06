@@ -48,10 +48,15 @@ module.exports = [
     "a=rtpmap:116 red/90000",
     "a=rtpmap:117 ulpfec/90000",
     "a=extmap:2/sendrecv urn:ietf:params:rtp-hdrext:toffset",
+    "a=ssrc-group:FID 797563643 193463643",
     "a=ssrc:797563643 cname:RbR04HtIjW+Sa+yz",
     "a=ssrc:797563643 msid:uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgo uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgov0",
     "a=ssrc:797563643 mslabel:uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgo",
     "a=ssrc:797563643 label:uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgov0",
+    "a=ssrc:193463643 cname:RbR04HtIjW+Sa+yz",
+    "a=ssrc:193463643 msid:uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgo uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgov0",
+    "a=ssrc:193463643 mslabel:uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgo",
+    "a=ssrc:193463643 label:uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgov0",
     "a=candidate:1529647030 1 udp 2113937151 192.12.211.22 63522 typ host generation 0",
     "" // So we end with a \r\n
 ].join('\r\n');
