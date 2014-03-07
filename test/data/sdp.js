@@ -30,7 +30,7 @@ module.exports = [
     "a=ssrc:445948959 msid:uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgo uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgoa0",
     "a=ssrc:445948959 mslabel:uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgo",
     "a=ssrc:445948959 label:uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgoa0",
-    "a=candidate:1529647030 1 udp 2113937151 192.12.211.22 63522 typ host generation 0",
+    "a=candidate:1529647030 1 UDP 2113937151 192.12.211.22 63522 typ host generation 0",
     "m=video 1 RTP/SAVPF 100 116 117",
     "c=IN IP4 0.0.0.0",
     "a=rtcp:1 IN IP4 0.0.0.0",
@@ -57,6 +57,6 @@ module.exports = [
     "a=ssrc:193463643 msid:uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgo uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgov0",
     "a=ssrc:193463643 mslabel:uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgo",
     "a=ssrc:193463643 label:uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgov0",
-    "a=candidate:1529647030 1 udp 2113937151 192.12.211.22 63522 typ host generation 0",
+    "a=candidate:1529647030 1 UDP 2113937151 192.12.211.22 63522 typ host generation 0",
     "" // So we end with a \r\n
 ].join('\r\n');
