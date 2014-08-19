@@ -1,6 +1,6 @@
 {
   "name": "sdp-jingle-json",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "A parser/serializer for SDP to JSON. Useful for converting SDP to other formats like Jingle for WebRTC signalling",
   "main": "index.js",
   "repository": {
