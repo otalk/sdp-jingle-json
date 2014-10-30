@@ -44,10 +44,17 @@ The bundled and minified files will be in the generated `build` directory.
 var sjj = require('sdp-jingle-json');
 
 // I have SDP, but want JSON:
-var json = sjj.toSessionJSON(sdpBlob, 'initiator'); // or 'responder'
+var json = sjj.toSessionJSON(sdpBlob, {
+    creator: 'initiator', // Who created the media contents
+    role: 'inititator',   // Which side of the offer/answer are we acting as
+    direction: 'outgoing' // Are we parsing SDP that we are sending or receiving?
+});
 
 // I have JSON (a dictionary of session and content descriptions), but want SDP:
-var sdp = sjj.toSessionSDP(jsonSession);
+var sdp = sjj.toSessionSDP(jsonSession, {
+    role: 'responder',
+    direction: 'incoming'
+});
 ```
 
 You can also use `toMediaSDP` and `toMediaJSON` to convert only a single media section.
