@@ -1,11 +1,11 @@
 # SDP-Jingle-JSON
 **Convert SDP blobs to and from JSON**
 
-[![Build Status](https://travis-ci.org/legastero/sdp-jingle-json.png)](https://travis-ci.org/legastero/sdp-jingle-json)
-[![Dependency Status](https://david-dm.org/legastero/sdp-jingle-json.png)](https://david-dm.org/legastero/sdp-jingle-json)
-[![devDependency Status](https://david-dm.org/legastero/sdp-jingle-json/dev-status.png)](https://david-dm.org/legastero/sdp-jingle-json#info=devDependencies)
+[![Build Status](https://travis-ci.org/otalk/sdp-jingle-json.png)](https://travis-ci.org/otalk/sdp-jingle-json)
+[![Dependency Status](https://david-dm.org/otalk/sdp-jingle-json.png)](https://david-dm.org/otalk/sdp-jingle-json)
+[![devDependency Status](https://david-dm.org/otalk/sdp-jingle-json/dev-status.png)](https://david-dm.org/otalk/sdp-jingle-json#info=devDependencies)
 
-[![Browser Support](https://ci.testling.com/legastero/sdp-jingle-json.png)](https://ci.testling.com/legastero/sdp-jingle-json)
+[![Browser Support](https://ci.testling.com/otalk/sdp-jingle-json.png)](https://ci.testling.com/otalk/sdp-jingle-json)
 
 
 ## What is this?
@@ -17,7 +17,7 @@ Jingle for signalling.
 
 This library will convert raw SDP into JSON that mirrors the structure of
 XMPP Jingle content, making it simple to convert the SDP data into an XMPP 
-stanza with any of the various JS XMPP libraries, such as [stanza.io](https://github.com/legastero/stanza.io),
+stanza with any of the various JS XMPP libraries, such as [stanza.io](https://github.com/otalk/stanza.io),
 or [xmpp-ftw](https://github.com/lloydwatkin/xmpp-ftw).
 
 And since you're working with WebRTC, be sure to check out
