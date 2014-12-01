@@ -89,14 +89,14 @@ exports.toOutgoingJSONAnswer = function (sdp, creators) {
 };
 exports.toIncomingMediaJSONOffer = function (sdp, creator) {
     return toJSON.toMediaJSON(sdp, {
-        role: 'initiator',
+        role: 'responder',
         direction: 'incoming',
         creator: creator
     });
 };
 exports.toOutgoingMediaJSONOffer = function (sdp, creator) {
     return toJSON.toMediaJSON(sdp, {
-        role: 'responder',
+        role: 'initiator',
         direction: 'outgoing',
         creator: creator
     });

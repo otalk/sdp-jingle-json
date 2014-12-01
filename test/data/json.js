@@ -25,63 +25,72 @@ module.exports = {
                         "name": "ISAC",
                         "clockrate": "16000",
                         "channels": "1",
-                        "feedback": []
+                        "feedback": [],
+                        "parameters": []
                     },
                     {
                         "id": "104",
                         "name": "ISAC",
                         "clockrate": "32000",
                         "channels": "1",
-                        "feedback": []
+                        "feedback": [],
+                        "parameters": []
                     },
                     {
                         "id": "0",
                         "name": "PCMU",
                         "clockrate": "8000",
                         "channels": "1",
-                        "feedback": []
+                        "feedback": [],
+                        "parameters": []
                     },
                     {
                         "id": "8",
                         "name": "PCMA",
                         "clockrate": "8000",
                         "channels": "1",
-                        "feedback": []
+                        "feedback": [],
+                        "parameters": []
                     },
                     {
                         "id": "107",
                         "name": "CN",
                         "clockrate": "48000",
                         "channels": "1",
-                        "feedback": []
+                        "feedback": [],
+                        "parameters": []
                     },
                     {
                         "id": "106",
                         "name": "CN",
                         "clockrate": "32000",
                         "channels": "1",
-                        "feedback": []
+                        "feedback": [],
+                        "parameters": []
                     },
                     {
                         "id": "105",
                         "name": "CN",
                         "clockrate": "16000",
                         "channels": "1",
-                        "feedback": []
+                        "feedback": [],
+                        "parameters": []
                     },
                     {
                         "id": "13",
                         "name": "CN",
                         "clockrate": "8000",
                         "channels": "1",
-                        "feedback": []
+                        "feedback": [],
+                        "parameters": []
                     },
                     {
                         "id": "126",
                         "name": "telephone-event",
                         "clockrate": "8000",
                         "channels": "1",
-                        "feedback": []
+                        "feedback": [],
+                        "parameters": []
                     }
                 ],
                 "encryption": [
@@ -185,21 +194,24 @@ module.exports = {
                                 "subtype": "",
                                 "parameters": []
                             }
-                        ]
+                        ],
+                        "parameters": []
                     },
                     {
                         "id": "116",
                         "name": "red",
                         "clockrate": "90000",
                         "channels": "1",
-                        "feedback": []
+                        "feedback": [],
+                        "parameters": []
                     },
                     {
                         "id": "117",
                         "name": "ulpfec",
                         "clockrate": "90000",
                         "channels": "1",
-                        "feedback": []
+                        "feedback": [],
+                        "parameters": []
                     }
                 ],
                 "encryption": [
