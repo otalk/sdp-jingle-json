@@ -3,6 +3,7 @@ module.exports = [
     "o=- 1382398245712 1385147470924 IN IP4 0.0.0.0",
     "s=-",
     "t=0 0",
+    "a=msid-semantic: WMS *",
     "a=group:BUNDLE audio video",
     "m=audio 1 RTP/SAVPF 111 103 104 0 8 107 106 105 13 126",
     "c=IN IP4 0.0.0.0",
