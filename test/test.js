@@ -8,6 +8,8 @@ var tojson = require('../lib/tojson');
 var jsonData = require('./data/json');
 var sdpData = require('./data/sdp');
 
+var noSourceSdpData = require('./data/no-source-sdp');
+var noSourceJsonData = require('./data/no-source-json');
 
 // Data that is typically unique or time dependent
 var sid = '1382398245712';
@@ -34,6 +36,32 @@ test('to sdp', function (t) {
     });
 
     t.deepEqual(sdp, sdpData);
+    t.end();
+});
+
+test('no source to json', function (t) {
+    tojson._setIdCounter(0);
+    var json = SJJ.toSessionJSON(noSourceSdpData, {
+        creator: 'initiator',
+        role: 'initiator',
+        direction: 'outgoing'
+    });
+
+    t.deepEqual(json, noSourceJsonData);
+    t.end();
+});
+
+test('no source to sdp', function (t) {
+    t.plan(2);
+    var sdp = SJJ.toSessionSDP(noSourceJsonData, {
+        role: 'initiator',
+        direction: 'outgoing',
+        sid: sid,
+        time: time
+    });
+
+    t.ok(sdp.indexOf('msid-semantic') === -1);
+    t.deepEqual(sdp, noSourceSdpData);
     t.end();
 });
 
