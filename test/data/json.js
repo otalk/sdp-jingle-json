@@ -3,8 +3,8 @@ module.exports = {
         {
             "creator": "initiator",
             "name": "audio",
-            "description": {
-                "descType": "rtp",
+            "application": {
+                "applicationType": "rtp",
                 "media": "audio",
                 "payloads": [
                     {
@@ -137,7 +137,7 @@ module.exports = {
                 ]
             },
             "transport": {
-                "transType": "iceUdp",
+                "transportType": "iceUdp",
                 "candidates": [
                     {
                         "foundation": "1529647030",
@@ -166,8 +166,8 @@ module.exports = {
         {
             "creator": "initiator",
             "name": "video",
-            "description": {
-                "descType": "rtp",
+            "application": {
+                "applicationType": "rtp",
                 "media": "video",
                 "payloads": [
                     {
@@ -284,7 +284,7 @@ module.exports = {
                 ]
             },
             "transport": {
-                "transType": "iceUdp",
+                "transportType": "iceUdp",
                 "candidates": [
                     {
                         "foundation": "1529647030",

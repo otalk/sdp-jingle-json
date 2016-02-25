@@ -85,9 +85,9 @@ The format for the generated JSON content is:
            "name": "",
            "creator": "",
            "senders": "",
-           "description": {
+           "application": {
                // ---- RTP description
-               "descType": "rtp",
+               "applicationType": "rtp",
                "media": "",
                "ssrc": "",
                "sourceGroups": [
@@ -152,7 +152,7 @@ The format for the generated JSON content is:
            },
            "transport": {
                // ---- ICE UDP transport
-               "transType": "iceUdp",
+               "transportType": "iceUdp",
                "ufrag": "",
                "pwd": "",
                "setup": "",

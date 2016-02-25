@@ -3,8 +3,8 @@ module.exports = {
         {
             "creator": "initiator",
             "name": "audio",
-            "description": {
-                "descType": "rtp",
+            "application": {
+                "applicationType": "rtp",
                 "media": "audio",
                 "payloads": [
                     {
@@ -36,7 +36,7 @@ module.exports = {
                 "sources": []
             },
             "transport": {
-                "transType": "iceUdp",
+                "transportType": "iceUdp",
                 "candidates": [
                     {
                         "foundation": "1",
