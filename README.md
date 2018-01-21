@@ -46,7 +46,7 @@ var sjj = require('sdp-jingle-json');
 // I have SDP, but want JSON:
 var json = sjj.toSessionJSON(sdpBlob, {
     creators: ['initiator', 'initiator'], // Who created the media contents
-    role: 'inititator',   // Which side of the offer/answer are we acting as
+    role: 'initiator',   // Which side of the offer/answer are we acting as
     direction: 'outgoing' // Are we parsing SDP that we are sending or receiving?
 });
 
