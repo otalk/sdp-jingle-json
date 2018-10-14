@@ -18,13 +18,20 @@ function toJSON() {
   var sdp = document.getElementById('sdptext').value;
   sdp = sdp.replace(/\r\n/g, '\n');
   sdp = sdp.replace(/\n/g, '\r\n');
-  var json = SJJ.toSessionJSON(sdp);
+  var json = SJJ.toSessionJSON(sdp, {
+    creator: 'initiator',
+    role: 'initiator',
+    direction: 'outgoing'
+  });
   document.getElementById('jsontext').value = JSON.stringify(json, null, "  ");
 }
 
 function toSDP() {
   var json = JSON.parse(document.getElementById('jsontext').value);
-  document.getElementById('sdptext').value = SJJ.toSessionSDP(json);
+  document.getElementById('sdptext').value = SJJ.toSessionSDP(json, {
+    role: 'responder',
+    direction: 'incoming'
+  });
 }
     </script>
   </head>
