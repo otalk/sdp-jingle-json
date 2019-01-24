@@ -15,6 +15,7 @@ module.exports = [
     "a=mid:audio",
     "a=msid:uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgo uwwsnlQmzOrjxCsin4Z5lQ5XVpUFHQgUYLgoa0",
     "a=rtcp-mux",
+    "a=rtcp-rsize",
     "a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:EwN4nicDelI9pradqeXwjvJVjhIZthVgukUu33Of",
     "a=rtpmap:111 opus/48000/2",
     "a=fmtp:111 minptime=10",

@@ -111,6 +111,7 @@ module.exports = {
                 ],
                 "ssrc": "445948959",
                 "mux": true,
+                "rsize": true,
                 "sourceGroups": [],
                 "sources": [
                     {
