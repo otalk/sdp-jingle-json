@@ -1,4 +1,5 @@
 module.exports = {
+    "type": undefined,
     "contents": [
         {
             "creator": "initiator",
@@ -29,6 +30,7 @@ module.exports = {
                         "feedback": []
                     }
                 ],
+                "port": "1",
                 "encryption": [],
                 "feedback": [],
                 "headerExtensions": [],

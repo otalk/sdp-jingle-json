@@ -4,6 +4,7 @@ var fs = require('fs');
 var test = require('tape');
 var SJJ = require('../index');
 var tojson = require('../lib/tojson');
+var validateSdp = require('./validate-sdp');
 
 var jsonData = require('./data/json');
 var sdpData = require('./data/sdp');
@@ -35,7 +36,7 @@ test('to sdp', function (t) {
         time: time
     });
 
-    t.deepEqual(sdp, sdpData);
+    validateSdp(t, sdp, sdpData);
     t.end();
 });
 
@@ -66,8 +67,6 @@ test('no source to sdp', function (t) {
 });
 
 test('multiple pases', function (t) {
-    t.plan(2);
-
     tojson._setIdCounter(0);
     var json1 = SJJ.toSessionJSON(sdpData, {
         creator: 'initiator',
@@ -95,6 +94,6 @@ test('multiple pases', function (t) {
     });
 
     t.deepEqual(json2, jsonData);
-    t.deepEqual(sdp2, sdpData);
+    validateSdp(t, sdp2, sdpData);
     t.end();
 });
