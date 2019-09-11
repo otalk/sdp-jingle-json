@@ -1,5 +1,4 @@
 module.exports = {
-    "type": undefined,
     "contents": [
         {
             "creator": "initiator",

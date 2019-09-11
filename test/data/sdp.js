@@ -1,5 +1,5 @@
 module.exports = [
-    "type: offer, sdp: v=0",
+    "v=0",
     "o=- 6569601038001417104 2 IN IP4 127.0.0.1",
     "s=-",
     "t=0 0",

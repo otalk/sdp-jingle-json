@@ -958,7 +958,6 @@ module.exports = {
             }
         }
     ],
-    "type": "offer",
     "groups": [
         {
             "semantics": "BUNDLE",
